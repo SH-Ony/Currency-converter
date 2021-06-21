@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js">
+
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="text">
+            <h1>Currency Converter</h1>
+        </div>
+    </div>
+    <div class="convert">
+        <div class="from">
+            <h1>Initial Currency</h1>
+            <br>
+            <p>Enter your amount: </p>
+            <form name="boxform" class="box">
+                <input class="txt" type="number" name="start" id="input">
+                <!-- <br> <br> -->
+                <p>Current Currency:</p>
+                <input class="button" type="button" name="bdt" value="BDT" onclick="  var x= document.getElementById('input').value; toTaka(x); check();">
+                <input class="button" type="button" name="usd" value="USD" onclick="  var x= document.getElementById('input').value; toTaka(x*85);">
+                <input class="button" type="button" name="rs" value="RS" onclick="  var x= document.getElementById('input').value; toTaka(x*1.17);">
+
+
+
+            </form>
+            
+        </div>
+        <div class="from">
+            <h1>Final Currency</h1>
+            <br>
+            <p>Choose Your Currency: </p>
+            <form name="boxform" class="box">
+                
+                <input class="button" type="button" name="bdt" value="BDT" onclick=" var x=takaTo();output.value=x; alert(x); ">
+                <input class="button" type="button" name="usd" value="USD" onclick=" var x=takaTo(); output.value=x/85; alert(x/85);">
+                <input class="button" type="button" name="rs" value="RS" onclick=" var x=takaTo(); output.value=x/1.17; alert(x/1.17);">
+                <p>Converted Amount:</p>
+                <input class="txt" type="text" name="start" id="output">
+                
+            </form>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <p><span>SH_ONY</span> <br> 182-15-11620</p>
+    </div>
+
+    
+</body>
+</html>

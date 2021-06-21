@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(65, 62, 62);
+}
+
+
+
+.header .text h1{
+    text-align: center;
+    color: cyan;
+    margin-top: 70px;
+    font-size: 70px;
+    
+}
+
+.convert .from {
+    padding-left: 340px;
+    padding-top: 50px;
+}
+.convert{
+    display: flex;
+    align-items: center;
+}
+.convert .from h1{
+    color: rgb(187, 47, 47);
+    text-align: center;
+
+}
+.convert .from p{
+    font-size: large;
+    color: springgreen;
+}
+.convert .from .box .button{
+    width: 100px;
+    height: 20;
+    text-align: center;
+    
+    color: rgb(7, 2, 2);background-color: teal;
+    
+}
+.convert .from .box .txt{
+    width: 300px;
+    height: 50px;
+    background-color: wheat;
+
+}
+.convert .from .box .button:hover{
+    background-color: rgb(111, 143, 238);
+    
+}
+.footer{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    
+    
+}
+.footer p{
+    text-align: center;
+    color: cyan;
+    font-family: cursive;
+    font-size: 12px;
+}
+
